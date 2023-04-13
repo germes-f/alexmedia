@@ -1,0 +1,58 @@
+header {
+  color: $text_color;
+  padding: 3px 0;
+
+  .grid {
+    align-items: center;
+
+    .logo {
+      display: contents;
+
+      .logo_header {
+        font-style: normal;
+        font-weight: 900;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: right;
+        border-right: 1px solid #03032C;
+        padding-right: 10px;
+      }
+
+      .logo_text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        padding-left: 10px;
+      }
+    }
+
+    .main_menu {
+      ul {
+        list-style: none;
+
+        li {
+          display: inline;
+          padding-left: 30px;
+        }
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: $text_color;
+      transition: all 0.3s ease-in-out;
+
+
+      &:hover, &.active {
+        font-weight: 700;
+        color: #5D5FEF;
+      }
+    }
+
+    img.main_menu_button {
+      display: block;
+      margin-left: auto;
+    }
+  }
+}
