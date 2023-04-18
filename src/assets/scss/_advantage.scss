@@ -1,0 +1,37 @@
+.advantage {
+  h2 {
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 50px;
+  }
+
+  h3 {
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .figure1 {
+    position: absolute;
+    top: 0;
+    right: -60px;
+    animation: spin 10s infinite linear;
+  }
+
+  .figure2 {
+    position: absolute;
+    top: 400px;
+    right: -30px;
+    animation: spin 10s infinite linear;
+  }
+
+  .int {
+    padding-top: 30px;
+  }
+}

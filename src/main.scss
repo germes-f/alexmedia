@@ -1,11 +1,10 @@
 @import "assets/scss/variables";
+@import "assets/scss/general";
 @import "assets/scss/fonts";
 @import "assets/scss/header";
-
-
-.grid {
-  border-radius: 20px;
-  box-shadow: 5px 5px 20px 0 rgba(30, 83, 210, 0.1);
-}
-
-
+@import "assets/scss/slider";
+@import "assets/scss/advantage";
+@import "assets/scss/work";
+@import "assets/scss/partners";
+@import "assets/scss/prices";
+@import "assets/scss/form";

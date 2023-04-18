@@ -1,0 +1,40 @@
+.work {
+  h2 {
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 50px;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+
+  .img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .figure1 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    animation: spin 10s infinite linear;
+  }
+
+  .figure2 {
+    position: absolute;
+    left: -30px;
+    bottom: 0;
+    animation: spin 10s infinite linear;
+  }
+
+  .figure3 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    animation: spin 10s infinite linear;
+  }
+}

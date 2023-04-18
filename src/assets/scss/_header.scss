@@ -34,6 +34,10 @@ header {
         li {
           display: inline;
           padding-left: 30px;
+
+          &::before {
+            display: none;
+          }
         }
       }
     }
