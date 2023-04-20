@@ -1,24 +1,117 @@
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {
-
+/**
+* Бреакпойнты
+* @include breakpoint(phone){}
+ */
+@mixin breakpoint($point) {
+  @if $point == xxl {
+    @media only screen and (min-width: 1400px) {
+      @content;
+    }
+  } @else if $point == large {
+    @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+      @content;
+    }
+  } @else if $point == desktop {
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+      @content;
+    }
+  } @else if $point == medium {
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      @content;
+    }
+  } @else if $point == tablet {
+    @media only screen and (min-width: 576px) and (max-width: 767px) {
+      @content;
+    }
+  } @else if $point == phone {
+    @media only screen and (max-width: 575px) {
+      @content;
+    }
+  }
 }
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
-
+/**
+* Соотношение сторон
+* <div class="outer-box">
+*   <div class="inner-box"></div>
+* </div>
+* Использование
+* .outer-box {
+*   @include aspect-ratio(4, 3);
+* }
+ */
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+  > .inner-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
 }
 
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
 
-}
+@include breakpoint(phone) {
+  .form_box {
+    input, a.btn {
+      max-width: 320px !important;
+      display: block;
+      border: 1px solid #505178;
+      border-radius: 30px;
+      padding: 20px;
+      margin: 30px 0;
+      width: 100%;
 
-// X-Large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
+      &::placeholder {
+        color: #505178;
+        font-size: 14px;
+      }
+    }
+  }
 
-}
+  .figure1, .fifure2, .figure3 {
+    z-index: 0 !important;
+  }
 
-// XX-Large devices (larger desktops, 1400px and up)
-@media (min-width: 1400px) {
+  h2, li, p, h3 {
+    position: relative;
+    z-index: 10;
+  }
 
+  h2 {
+    font-size: 32px !important;
+    line-height: 32px !important;
+    text-align: center !important;
+  }
+
+  .slider {
+    .text_block {
+      margin-bottom: 50px;
+    }
+
+    .img {
+      max-width: 100% !important;
+      height: auto;
+    }
+
+  }
+
+  .partners {
+    img {
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+  }
+
+  .card {
+    margin-bottom: 30px;
+  }
 }

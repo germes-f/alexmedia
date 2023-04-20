@@ -83,12 +83,23 @@ $mob-gutter: ($grid-mobile-gutter / ($grid-mobile-breakpoint - ($grid-mobile-sid
 
 .d-xl-none {
   @media (min-width: $grid-mobile-breakpoint + 1) {
-    display: none!important;
+    display: none !important;
   }
 
   @media screen and (max-width: $grid-mobile-breakpoint) {
     display: block;
   }
+}
+
+/**
+* Абсолютное позиционирование
+ */
+@mixin abs-position($top, $right, $bottom, $left) {
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
 }
 
 

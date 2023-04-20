@@ -23,4 +23,13 @@
     margin-bottom: 30px;
   }
 
+  .map {
+    img {
+      max-width: 100%;
+      height: auto;
+      position: relative;
+      display: block;
+      margin-left: auto;
+    }
+  }
 }

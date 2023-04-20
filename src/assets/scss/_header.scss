@@ -1,8 +1,12 @@
 header {
   color: $text_color;
-  padding: 3px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 
   .grid {
+    background-color: rgba(255, 255, 255, .7);
+    backdrop-filter: blur(5px);
     align-items: center;
 
     .logo {
@@ -59,4 +63,36 @@ header {
       margin-left: auto;
     }
   }
+}
+
+.open-content {
+  background: #eee;
+  z-index: 1100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  max-width: 0;
+  overflow: hidden;
+  transition: 1s ease max-height;
+
+  ol {
+    list-style: none;
+
+    li {
+      a {
+        color: $text_color;
+        text-transform: uppercase;
+        text-decoration: none;
+
+        &:hover {
+          color: #5D5FEF;
+        }
+      }
+    }
+  }
+}
+.open-content--show {
+  max-width: 250px;
+  width: 250px;
 }

@@ -11,8 +11,6 @@
         position: absolute;
         max-width: 600px;
         height: auto;
-        top: 0;
-        bottom: 0;
       }
 
       @for $i from 1 through 7 {
@@ -23,80 +21,66 @@
 
       .img7 {
         width: 460px;
-        right: 0px;
-        top: 21px;
+        @include abs-position(21px, 0, auto, auto);
       }
 
       .img6 {
         width: 600px;
-        right: 160px;
-        top: 30px;
+        @include abs-position(30px, 160px, auto, auto);
         animation: spin 10s infinite linear;
       }
 
       .img5 {
         width: 250px;
-        right: 350px;
-        top: 360px;
+        @include abs-position(360px, 350px, auto, auto);
         animation: spin 10s infinite linear;
       }
 
       .img4 {
         width: 370px;
-        right: 160px;
-        top: 500px;
+        @include abs-position(500px, 160px, auto, auto);
       }
 
       .img3 {
         width: 350px;
-        right: 60px;
-        top: 60px;
+        @include abs-position(60px, 60px, auto, auto);
       }
 
       .img2 {
         width: 400px;
-        right: 50px;
-        top: 105px;
+        @include abs-position(105px, 50px, auto, auto);
       }
 
       .img1 {
         width: 80px;
-        right: 250px;
-        top: 0px;
+        @include abs-position(0, 250px, auto, auto);
         animation: spin 10s infinite linear;
       }
+    }
 
-      .figure1 {
-        right: -70px;
-        top: -10px;
-        animation: spin 10s infinite linear;
+    .figure1 {
+      @include abs-position(-10px, -70px, auto, auto);
+      animation: spin 10s infinite linear;
+    }
+
+    .figure2 {
+      @include abs-position(550px, auto, auto, 20px);
+      animation: spin 10s infinite linear;
+    }
+
+    .figure3 {
+      @include abs-position(0, auto, auto, -80px);
+      animation: spin 10s infinite linear;
+    }
+
+    .text_block {
+      h2 {
+        font-weight: 900;
+        font-size: 50px;
+        line-height: 73px;
+        z-index: 150;
       }
 
-      .figure2 {
-        left: 20px;
-        top: 550px;
-        animation: spin 10s infinite linear;
-      }
-
-      .figure3 {
-        left: -80px;
-        top: 0px;
-        animation: spin 10s infinite linear;
-      }
-
-      .text_block {
-        position: absolute;
-        top: 10%;
-
-        h2 {
-          font-weight: 900;
-          font-size: 60px;
-          line-height: 73px;
-          position: relative;
-          z-index: 150;
-        }
-
-      }
     }
   }
 }

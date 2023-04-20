@@ -9,8 +9,8 @@
 </head>
 <body>
 
-<header>
-    <div class="grid box">
+<header class="">
+    <div class="grid box sticky">
         <div class="col-xl-3 col-xs-2 logo">
             <div class="logo_header">Alex <br>Media</div>
             <div class="logo_text">
@@ -34,18 +34,42 @@
                 <a href="tel:88000000000" class="d-xs-none">8(800) 000 00-00</a>
                 <img src="/assets/img/menu_FILL0_wght400_GRAD0_opsz48.svg"
                      alt="меню"
-                     class="main_menu_button d-xl-none"
+                     class="main_menu_button d-xl-none open-button"
                 />
             </strong>
         </div>
     </div>
 </header>
 
+<aside id="opencontent" class="open-content">
+    <ol>
+        <li class="active"><a href="#" class="active">Главная</a></li>
+        <li><a href="#">Разработка</a></li>
+        <li><a href="#">Продвижение</a></li>
+        <li><a href="#">Портфолио</a></li>
+        <li><a href="#">Контакты</a></li>
+    </ol>
+</aside>
+
 <main>
     <section class="slider">
-        <div class="grid box">
-            <div class="col-xl-12">
-                <div class="image_block ">
+        <div class="grid box align-items-center relative">
+            <img class="figure1" src="/assets/img/polygon4.svg" alt="">
+            <img class="figure2" src="/assets/img/polygon3-1.svg" alt="">
+            <img class="figure3" src="/assets/img/polygon2.svg" alt="">
+            <div class="col-xl-6 col-xs-4">
+                <div class="text_block ">
+                    <h2>Ваши клиенты <br> должны знать о Вас!</h2>
+                    <ul>
+                        <li>Разрабатываем сайты под ключ</li>
+                        <li>Работаем с любым форматом, от лендинга <br> до интернет-магазина</li>
+                        <li>Поддерживаем вас после запуска сайта</li>
+                    </ul>
+                    <a class="btn" href="#modal" data-fancybox>Оставить заявку</a>
+                </div>
+            </div>
+            <div class="col-xl-6 col-xs-4">
+                <div class="image_block d-xs-none">
                     <img class="img1" src="/assets/img/slider/img_1.png" alt="">
                     <img class="img2" src="/assets/img/slider/img_2.png" alt="">
                     <img class="img3" src="/assets/img/slider/img_3.png" alt="">
@@ -53,18 +77,9 @@
                     <img class="img5" src="/assets/img/slider/img_5.png" alt="">
                     <img class="img6" src="/assets/img/slider/img_6.png" alt="">
                     <img class="img7" src="/assets/img/slider/img_7.png" alt="">
-                    <div class="text_block ">
-                        <h2>Ваши клиенты <br> должны знать о Вас!</h2>
-                        <ul>
-                            <li>Разрабатываем сайты под ключ</li>
-                            <li>Работаем с любым форматом, от лендинга <br> до интернет-магазина</li>
-                            <li>Поддерживаем вас после запуска сайта</li>
-                        </ul>
-                        <a class="btn" href="#modal" data-fancybox>Оставить заявку</a>
-                    </div>
-                    <img class="figure1" src="/assets/img/polygon4.svg" alt="">
-                    <img class="figure2" src="/assets/img/polygon3-1.svg" alt="">
-                    <img class="figure3" src="/assets/img/polygon2.svg" alt="">
+                </div>
+                <div class="d-xl-none">
+                    <img class="img" src="/assets/img/slider/img.png" alt="">
                 </div>
             </div>
         </div>
@@ -122,7 +137,7 @@
                     <div class="col-xl-9 col-xs-3">
                         <h3>Чистый расчет стоимости сайта
                         </h3>
-                        <p>Мы честно расчитаем стоимость Вашего сайта, 
+                        <p>Мы честно расчитаем стоимость Вашего сайта,
                             поэтому с Вашей стороны не будет никаких переплат
                             за лишние услуги</p>
                     </div>
@@ -147,9 +162,9 @@
             <div class="col-xl-6 col-xs-4 ">
                 <img class="img" src="/assets/img/img.png" alt="">
             </div>
-                <img class="figure1" src="/assets/img/polygon1.svg" alt="">
-                <img class="figure2" src="/assets/img/polygon2-1.svg" alt="">
-                <img class="figure3" src="/assets/img/plus.svg" alt="">
+            <img class="figure1" src="/assets/img/polygon1.svg" alt="">
+            <img class="figure2" src="/assets/img/polygon2-1.svg" alt="">
+            <img class="figure3" src="/assets/img/plus.svg" alt="">
 
         </div>
     </section>
@@ -159,10 +174,10 @@
             <div class="col-xl-12 col-xs-4">
                 <h2>Мы официальные партнеры</h2>
             </div>
-            <div class="col-xl-3 col-xs-2"><img src="/assets/img/bitrix.png" alt=""></div>
-            <div class="col-xl-3 col-xs-2"><img src="/assets/img/yandex.png" alt=""></div>
-            <div class="col-xl-3 col-xs-2"><img src="/assets/img/bitrix24.png" alt=""></div>
-            <div class="col-xl-3 col-xs-2"><img src="/assets/img/beget.png" alt=""></div>
+            <div class="col-xl-3 col-xs-4"><img src="/assets/img/bitrix.png" alt=""></div>
+            <div class="col-xl-3 col-xs-4"><img src="/assets/img/yandex.png" alt=""></div>
+            <div class="col-xl-3 col-xs-4"><img src="/assets/img/bitrix24.png" alt=""></div>
+            <div class="col-xl-3 col-xs-4"><img src="/assets/img/beget.png" alt=""></div>
         </div>
     </section>
 
@@ -300,8 +315,11 @@
                     <dt>Адрес</dt>
                     <dd>г. Иваново, Комсомольская, 17</dd>
                 </dl>
+                <a href="#"><img class="mr-5" src="/assets/img/akar-icons_instagram-fill.svg" alt=""></a>
+                <a href="#"><img class="mr-5" src="/assets/img/la_vk.svg" alt=""></a>
+                <a href="#"><img src="/assets/img/akar-icons_facebook-fill.svg" alt=""></a>
             </div>
-            <div class="col-xl-7 col-xs-4">
+            <div class="col-xl-7 col-xs-4 map">
                 <img src="/assets/img/map.png" alt="">
             </div>
         </div>
@@ -309,13 +327,29 @@
 </main>
 
 <footer>
-    <div class="grid">
-
+    <div class="grid box align-items-center">
+        <div class="col-xl-6 col-xs-2 logo">
+            <div class="logo_header">Alex <br>Media</div>
+            <div class="logo_text">
+                Веб-студия <br>
+                Создание сайтов под ключ
+            </div>
+        </div>
+        <div class="col-xl-6 col-xs-2 copyright">
+            © 2022, Все права защищены
+        </div>
     </div>
 </footer>
 
-<div id="modal" style="display: none">
-    <h2>Позвоним в удобное время</h2>
+<div id="modal" class="form_box" style="display: none">
+    <h3>Позвоним в удобное время</h3>
+    <p>Заполните форму обратной связи и уточните время, когда удобно поговорить.</p>
+    <form id="form_modal">
+        <input type="tel" name="phone" required placeholder="Телефон">
+        <input type="text" name="comment" required placeholder="Комментарий">
+        <a id="form_btn_modal" href="javascript(void)" class="btn">Оставить заявку</a>
+    </form>
+    <div id="form-content_modal"></div>
 </div>
 <script src="./main.bundle.js"></script>
 </body>
